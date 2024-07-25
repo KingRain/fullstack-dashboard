@@ -27,9 +27,13 @@ const App = () => {
     navigate('/home');
   };
 
+  const handleLogout = () => {
+    setUser(null);
+  };
+
   return (
     <div className="App">
-      {user && <Sidebar />}
+      {user && <Sidebar onLogout={handleLogout} />}
       <Routes>
         <Route
           path="/"
