@@ -1,0 +1,55 @@
+/* src/App.css */
+body, html, #root {
+  margin: 0;
+  font-family: 'Jetbrains Mono', monospace;
+}
+
+.App {
+  display: flex;
+  
+  background-color: transparent;
+  width: 100%;
+  height: inherit;
+}
+
+.sidebar {
+  margin-left: -1px;
+  margin-top: -1px;
+  position: fixed;
+  top: -1px;
+  left: -1px;
+
+  width: 160px;
+  background: #232323;
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+  
+  height: 100%;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: 220px; /* Space for the sidebar */
+  padding: 20px;
+  width: calc(100% - 220px); /* Full width minus the sidebar */
+}
